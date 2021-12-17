@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script src="functions.js"></script>
+    <script> 
+        window.onload = function()// В head нет DOM, поэтому мы запустим код только после загрузки
+        {
+            let cars = document.querySelectorAll(".card h3");
+            for (let i = 0; i < cars.length; i++)
+            {
+                cars[i].style.color = 'red';        
+            }
+        }
+
+        let x;
+        try
+        {
+            console.log(x+5);
+        }
+        catch (error)
+        {
+            console.log("Error!");
+        }
+        finally
+        {
+            console.log("Обработка исключения завершена");
+        }
+    </script>
+</head>
+<body>
+    <h1>DOM</h1>
+    <div class="wrapper">
+        <h2>Caption</h2>
+        <div class="card">
+            <h3>Card</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta voluptatum ea repellat beatae veritatis laboriosam atque nobis quae, accusamus quod!</p>
+        </div>
+        <div class="card">
+            <h3>Card</h3>
+            <p>Porro ab ullam maiores, veritatis rem nisi quasi laboriosam nesciunt dignissimos numquam aut saepe dolorum et repellendus itaque minima accusantium.</p>
+        </div>
+        <div class="card">
+            <h3>Card</h3>
+            <p>Modi amet eum unde, a ullam laboriosam maiores inventore quibusdam architecto sapiente fuga. Magni deserunt quisquam autem magnam ducimus rerum.</p>
+        </div>
+    </div>
+    
+    <!-- action="" - куда отправляется форма -->
+    <form action="#" method="get">
+        <input type="text" placeholder="Type something" name="txt">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+

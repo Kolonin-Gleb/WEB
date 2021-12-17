@@ -1,0 +1,69 @@
+body {
+    height: 3000px; /*Длинный сайт*/
+}
+
+header {
+    width: calc(100% - 20px) ; /*Чтобы изменение отступов ниже не повлияло на ширину блока*/
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 2px solid silver;
+    padding: 10px; /*Отступы слева и справа увеличатся на 10px*/
+    font-size: 1.2em;
+    color: #333;
+    font-family: Comic Sans MS;
+
+    float: left;
+}
+
+article, aside {
+    background-color: rgb(253, 206, 206);
+    height: 400px;
+    float: left; /*Размещам блоки друг рядом с другом*/
+    border-radius: 5px;
+    border: 1px solid silver;
+    box-sizing: border-box; /*Запрет на изменение ширины*/
+    margin-top: 20px;
+
+    padding: 10px; /*Отступы для содержимого блоков*/
+}
+
+article {
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    /* clear: both; Запрет ставить блоки по близости. Блоки будут переставлены в другое место */
+}
+
+aside {
+    width: 30%;
+    /* position: relative; Позиция относительная */
+    /* position: fixed; Закрепленная позиция */
+    /* top: 30px; Смещение */
+}
+
+footer {
+    width: calc(100% - 20px) ; /*Чтобы изменение отступов ниже не повлияло на ширину блока*/
+    height: 50px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-top: 2px solid silver;
+    padding: 10px; /*Отступы слева и справа увеличатся на 10px*/
+    font-size: 1.2em;
+    color: #333;
+    font-family: Comic Sans MS;
+
+    float: left;
+}
+
+.spanBlock {
+    display: block; /*Отображать как блоки*/
+    /* display: none; Не отображать */
+    /* visibility: hidden; Не отоброжать, но оставить место */
+    /* display: list-item; Делаем элементами списка */
+    height: 50px;
+    width: 100px;
+    border: 1px solid red;
+    /* overflow: scroll; Добавление полос прокруток для блока */
+    overflow: auto;  /*Добавление необходимых полос прокруток для блока*/
+}

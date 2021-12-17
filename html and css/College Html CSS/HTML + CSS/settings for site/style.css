@@ -1,0 +1,51 @@
+body {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: seagreen;
+}
+.banner {
+    background-image: url(https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9_%D0%B3%D0%BE%D0%B4#/media/%D0%A4%D0%B0%D0%B9%D0%BB:Juletr%C3%A6et.jpge);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+}
+.presents {
+    padding:  50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 crimson;
+    margin-bottom: 50px;
+}
+
+@media print {
+    body
+    {
+        background-color: transparent; /*Прозрачный фон для печати*/
+    }
+    .card
+    {
+        box-shadow: 0 2px 5px 0 black;
+    }
+}
+
+@media (max-width: 800px) {
+    body
+    {
+        width: 100%;
+    }
+    .card
+    {
+        width: 45%;
+    }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+    .card
+    {
+        width: 100%;
+    }
+}

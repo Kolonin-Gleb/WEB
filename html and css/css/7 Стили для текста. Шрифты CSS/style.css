@@ -1,0 +1,18 @@
+/*Селектор по id*/
+#textStyles {
+    /*Стили*/
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    /*Шрифты*/
+    /* text-align: right; */
+    text-indent: 1.1em; /*Отступ для каждой 1 строки*/
+    /* text-transform: capitalize; /*Каждая 1 буква в p будет заглавной*/
+    word-spacing: 10px; /*Интервал между словами*/
+    letter-spacing: 5px;
+    line-height: 200%;
+
+}

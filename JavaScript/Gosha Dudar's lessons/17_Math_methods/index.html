@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Изучение JS. ООП. Математические методы объекта Math</title>
+    <script type="text/javascript">
+        
+    </script>
+</head>
+
+<body> 
+    <script type="text/javascript">
+        // var p = Math.PI;
+        // alert(p);
+
+        // alert(Math.abs(-7));
+        // alert(Math.sin(0.3)); // Works with radians
+        alert(Math.random()); // random() - по умолчанию генерирует от 0 до 1
+        
+        // Методы округления
+        alert(Math.floor(5.3) + " " + Math.round(0.435) + " " + Math.ceil(5.3));
+
+        arrayOfRandNums = new Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
+
+        for (let i = 0; i < arrayOfRandNums.length; i++)
+        {
+            arrayOfRandNums[i] = ( Math.ceil(Math.random() * 11) - 1 ); // Случайное число от 0 до 10
+        }
+
+        arrayElements = '';
+
+        for (let j = 0; j < arrayOfRandNums.length; j++)
+        {
+            arrayElements += arrayOfRandNums[j] + ' ';
+        }
+
+        alert(arrayElements);
+
+    </script>
+
+</body>
+</html>

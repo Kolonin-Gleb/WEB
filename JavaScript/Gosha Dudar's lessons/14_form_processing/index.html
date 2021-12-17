@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Изучение JS. Обработка формы</title>
+
+    <script type="text/javascript">
+        function isValid(form)
+        {
+            var fail = "";
+            var name = form.name.value; //Берем значение из элемента формы с id = name.
+            var email = form.email.value;
+            var password = form.password.value;
+            var gender = form.gender.value; //Берем значение из элемента формы с name = gender.
+
+            var adr_pattern = /[0-9a-z_-]+@[0-9a-z_-]+\.[a-z]{2,5}/i; // Рег. выражение для проверки email
+
+            // Вывод: Брать значения можно как по атрибуту name, так и id.
+            if (name == "")
+                fail += 'Name not entered. '; 
+            else if (adr_pattern.test(email) == false)
+                fail += 'Email not entered or does not exist. ';
+            else if (password == "")
+                fail += 'Password not entered. ';
+            else if (gender == "")
+                fail += 'Gender not selected. ';
+            if (fail != "")
+            {
+                alert(fail);
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body> 
+    <form action="" method="POST" id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Input your name">
+        <br><br>
+
+        <label for="name">Email:</label>
+        <input type="text" id="email" placeholder="Input your email">
+        <br><br>
+
+        <label for="name">Password:</label>
+        <input type="password" id="password" placeholder="Input your password">
+        <br><br>
+
+        <label for="name">Gender:</label>
+        <!-- Атрибут name необходим, чтобы создать группу radio button-ов-->
+        <input type="radio" name="gender" value="Man" id="Man"> <label for="Man">Man</label>
+        <input type="radio" name="gender" value="Woman" id="Woman"> <label for="Woman">Woman</label>
+        <br><br>
+
+        <input type="button" onclick="isValid(document.getElementById('form'))" value="Ready">
+    </form>
+
+
+</body>
+</html>

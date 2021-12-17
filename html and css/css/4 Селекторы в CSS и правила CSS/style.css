@@ -1,0 +1,33 @@
+/*Применеие стилей ко всему документу*/
+* {
+    font-size: 20px;
+}
+
+html {
+    background-color: darkkhaki;
+}
+
+#first_h3 {
+    color: red;
+}
+
+.myStyle {
+    color: yellow;
+}
+
+/*Класс стилей только для тегов р*/
+p.style {
+    text-align: center;
+    color: teal
+}
+
+/*Стили для всех тегов i в тегах p*/
+p i {
+    background-color: blue;
+}
+
+/*Стили только для 2 видов тегов*/
+h4.example, b {
+    font-size: 24px;
+    font-weight: normal;
+}

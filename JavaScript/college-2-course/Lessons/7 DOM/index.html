@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h2 {
+            display: inline-block;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            let cards = document.querySelectorAll(".card h3");
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].style.color = "red";
+            }
+        }
+
+        let x;
+        try {
+            console.log(x + y);
+        } catch (e) {
+            console.log("err");
+        } finally {
+            console.log("ololololo");
+            // do nothing;
+        }
+        console.log("done");
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Caption</h2>
+        <!-- .card*3>h3{Card}+p>lorem20-->
+        <div class="card">
+            <h3>Card</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim error, esse laboriosam maxime nulla
+                quasi quia soluta suscipit tempora?</p>
+        </div>
+        <div class="card">
+            <h3>Card</h3>
+            <p>Ad assumenda atque aut cum, cupiditate dicta eligendi error fuga impedit inventore ipsa labore magnam,
+                necessitatibus quos suscipit tempora ullam!</p>
+        </div>
+        <div class="card">
+            <h3>Card</h3>
+            <p>Cum, doloremque doloribus dolorum eaque eligendi error facere hic inventore iure libero maxime mollitia
+                repellat reprehenderit, tempora tenetur veniam voluptate!</p>
+        </div>
+
+        <form action="" method="post">
+            <input type="text" placeholder="Type something..." name="message">
+            <input type="button" onclick="showMsg()" value="Тык">
+        </form>
+        <!--Место куда помещается текст-->
+        <div></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- script in head -->
+<!-- try/catch -->
+<!-- Date -->
+<!-- forms -->

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Изучение JS. События и обработчики событий</title>
+
+    <script type="text/javascript">
+        // Функция работающая с кнопками
+        function buttonclick(button)
+        {
+            alert("Кнопка " + button.name + " с текстом " + button.value + " нажата!");
+        }
+        var countOfPointing = 0; // Глобальная переменная
+        function counter(element)
+        {
+            countOfPointing++;
+            element.innerHTML = "На этот текст было наведено: <br>" + countOfPointing + " раз"; // innerHTML позволяет записать html код на элемент
+        }
+    </script>
+</head>
+<!-- onload="" - событие загрузки объекта -->
+<body onload="alert('Страница загружена')"> 
+    <input type="button" name='b' value="Click me!" onclick="buttonclick(this)"> 
+    <!-- onclick="" - тип события для кнопки -->
+    <!-- в "" записывается функция, что будет обрабатывать событие -->
+
+    <span onmouseover="counter(this)">На этот текст было наведено 0 раз</span>
+
+</body>
+</html>

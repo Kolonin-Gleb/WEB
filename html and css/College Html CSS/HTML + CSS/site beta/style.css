@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+}
+body {
+    padding: 100px calc(50% - 500px); /*неявное исп JS для вычислений */
+    font: 20px sans-serif;
+    /* color: #222; */
+}
+.header {
+    /* background: blue;
+    color: #ffffff */
+}
+.main {
+    /* background: fuchsia */
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.block {
+    width: 450px;
+    height: 450px;
+    /* background: green; */
+}
+.menu {
+    width: 450px;
+    /* background: orange; */
+}
+.header, .main, .menu {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 100px; */
+}
+.logo {
+    color: blueviolet;
+}
+.logo.span {
+    color: violet;
+}
+.btn {
+    display: flex;
+    padding: 25px 10px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; 
+    background: blueviolet;
+    border-radius: 20px;
+}

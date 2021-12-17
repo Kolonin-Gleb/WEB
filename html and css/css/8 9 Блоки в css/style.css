@@ -1,0 +1,22 @@
+#testBlock {
+    height: 200px; /*Высота блока*/
+    width: 400px;/*Ширина блока*/
+    border: 3px blue dashed /*solid dotted*/;
+    border-bottom: 3px red solid;
+    background-color: rgb(236, 116, 47);
+    margin: 10px; /*Отступы внешние*/
+    padding: 10px; /*Отступы внутренние*/
+    border-radius: 10px; /*Скругление*/
+}
+
+#testBlock2 {
+    height: 200px; /*Высота блока*/
+    width: 400px;  /*Ширина блока*/
+    /* border: 3px darkmagenta groove; ridge или groove - Вдавленная объемная линия*/
+    border: 3px darkmagenta outset; /* inset - Весь блок вдавленный outset - Весь блок выпуклый*/
+    border-left: 3px red inset;
+
+    
+    border-bottom: 5px yellow double; /*Двойная линия*/
+
+}

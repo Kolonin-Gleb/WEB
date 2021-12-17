@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Изучение JS</title>
+</head>
+<body>
+    <!--Методы alert, confirm, prompt JS-->
+    <!-- <script type="text/javascript">
+        alert("You are under attack!");
+        if(confirm("Do you want to surrender?")) // Ok
+            alert("Follow me.");
+        else // Cancel
+            alert("Dead or alive, will you are coming with me!");
+            answer = prompt("Hint: Say \"I'll be back\"");
+            if (answer == "I'll be back")
+                document.write("You defeated Robocop's OS");
+            else
+                document.write("You have been arrested!");
+                document.write("<br>");
+    </script> -->
+
+    <!--Массивы JS-->
+    <!-- <script type="text/javascript">
+        var arr = new Array("str", 3.14, true); // Создание массива
+        document.write(arr + "<br>");
+        document.write("<br>");
+
+        for (let i = 0; i < arr.length; i++) {
+            document.write(arr[i] + "<br>");
+        }
+        document.write("<br>");
+
+    // Многомерные массивы JS
+    
+    var arr1 = new Array(0, 1, 2, 3);
+    var arr2 = new Array(4, 5, 6, 7);
+    var arr3 = new Array(8, 9, 10, 11);
+
+    var array = new Array(arr1, arr2, arr3);
+    
+    document.write("<br>");
+    document.write("Содержимое 1ого массива в массиве: ");
+    for (let i = 0; i < arr1.length; i++)
+            document.write(array[0][i] + " ");
+    document.write("<br>");
+    document.write("Содержимое 2ого массива в массиве: ");
+    for (let i = 0; i < arr1.length; i++)
+            document.write(array[1][i] + " ");
+    document.write("<br>");
+    document.write("Содержимое 3ого массива в массиве: ");
+    for (let i = 0; i < arr1.length; i++)
+            document.write(array[2][i] + " ");
+
+    document.write("<br>");
+    </script> -->
+
+    <!--Функции JS-->
+    <script type="text/javascript">
+        function printer(text) {
+            document.write(text);
+        }
+
+        printer("Hello! Can you print it?");
+
+        // Области видимости
+        var global = 234;
+        var i = 10;
+
+        function test() {
+            // Разные тесты
+            var global = 1;
+            global++;
+            var i = 5; // new i
+        }
+
+        test();
+        document.write("global " + global + " i " + i);
+    </script>
+
+</body>
+</html>

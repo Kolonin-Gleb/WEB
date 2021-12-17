@@ -1,0 +1,22 @@
+* {
+    font-size: 20px;
+}
+
+/* Пример псевдоэлемента */
+p#Unusual1Letter::first-letter {
+    color: blue;
+}
+
+p#Unusual1Line::first-line {
+    color: red;
+}
+
+/* Пример псевдокласса */
+.href:hover {
+    color: yellow;
+    text-decoration: none; /*без подчёркивания*/
+}
+
+p:active {
+    text-align: center;
+}
