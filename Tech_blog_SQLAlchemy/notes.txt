@@ -1,0 +1,11 @@
+Используются библиотеки:
+flask # Для разработки сайта на python
+flask-sqlalchemy # Для связи бд и сайта
+datetime # Для получения тек. даты и времени
+
+Используются фреймворки:
+Bootstrap - JS фреймворк набор готовых стилей и JS скриптов
+Подключается как стиль по ссылке https://www.bootstrapcdn.com/
+
+Сайт с которого взята часть кода:
+https://getbootstrap.com/docs/5.1/examples/pricing/

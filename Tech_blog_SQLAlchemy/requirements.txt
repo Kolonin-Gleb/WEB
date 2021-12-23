@@ -1,0 +1,14 @@
+click==8.0.3
+colorama==0.4.4
+DateTime==4.3 #Для получения времени
+Flask==2.0.2 # Для разработки сайта на python
+Flask-SQLAlchemy==2.5.1 # Для связи бд и сайта
+greenlet==1.1.2
+gunicorn==20.1.0 # Для корректной работы на сервере
+itsdangerous==2.0.1
+Jinja2==3.0.3 # Шаблонизатор альтернатива Django
+MarkupSafe==2.0.1
+pytz==2021.3
+SQLAlchemy==1.4.28
+Werkzeug==2.0.2
+zope.interface==5.4.0
