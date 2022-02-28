@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Добавить банковскую карту</h1>
+
+    <div class="container">
+        <form id="setCard">
+            <!-- атрибут name необходим для взаимодействия с сервером -->
+            <div class="row">
+                <label for="u">Card holder</label>
+                <input id="u" type="text" name="user" maxlength="16" value="Name Lastname">
+            </div>
+            <div class="row">
+                <label for="n">Card number</label>
+                <!-- pattern для рег. выражения от 0 до 16 -->
+                <input id="n" type="text" name="number" maxlength="16" pattern="\d{0,16}" value="0000111122223333"> 
+            </div>
+            <div class="row">
+                <label for="s">Pay system</label>
+                <select id="s" name="system">
+                    <option value="img/cc-visa-brands.svg">visa</option>
+                    <option selected value="img/cc-mastercard-brands.svg">mastercard</option>
+                    <option value="img/cc-paypal-brands.svg">paypal</option>
+                </select>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+
+        <div class="preview">
+            <div class="line">
+                <!-- Затычка, чтобы номер карты был по центру -->
+            </div>
+            <div class="line number">
+                <span>0000</span>
+                <span>1111</span>
+                <span>2222</span>
+                <span>3333</span>
+            </div>
+            <div class="line">
+                <div class="user">Name Lastname</div>
+                <div class="system"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="result">
+        <table>
+            <thead>
+                <tr>
+                    <th>user</th>
+                    <th>number</th>
+                    <th>system</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>Gleb Kolonin</td>
+                    <td>1234 5678 9012 3456</td>
+                    <td>paypal</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
